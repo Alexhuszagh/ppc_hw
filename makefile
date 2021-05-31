@@ -4,6 +4,7 @@
 # The gnu toolchain is assumed to be in your path.
 # Modify $(QEMU) to where your qemu is located
 
+CFLAGS=-Iinc
 QEMU=qemu-system-ppc
 
 .PHONY: all
