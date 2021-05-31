@@ -4,21 +4,7 @@
 # The gnu toolchain is assumed to be in your path.
 # Modify $(QEMU) to where your qemu is located
 
-PROC=powerpc
-TYPE=eabi
-PREFIX=$(PROC)-$(TYPE)-
-#PATH:=/usr/local/bin:$(PATH)
-CFLAGS=-Iinc
-
-CC=$(PREFIX)gcc
-AS=$(PREFIX)as
-AR=$(PREFIX)ar
-LD=$(PREFIX)ld
-NM=$(PREFIX)nm
-OBJDUMP=$(PREFIX)objdump
-OBJCOPY=$(PREFIX)objcopy
-
-QEMU=~/qemu/ppc-softmmu/qemu-system-ppc
+QEMU=qemu-system-ppc
 
 .PHONY: all
 
