@@ -6,6 +6,8 @@
 
 CFLAGS=-Iinc
 QEMU=qemu-system-ppc
+OBJCOPY=objcopy
+OBJDUMP=objdump
 
 .PHONY: all
 
